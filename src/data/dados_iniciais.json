@@ -1,25 +1,25 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
+      "titulo": "Buakaw",
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
+        "text": "Buakaw fights and highlights",
         "url": "https://www.alura.com.br/cursos-online-front-end"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "REAL DESTROYER - Buakaw Banchamek",
+          "url": "https://www.youtube.com/watch?v=E6AgI1LF_hg"
         },
         {
           "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "url": "https://www.youtube.com/watch?v=BizxTQ7vD-Q"
         },
         {
           "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "url": "https://www.youtube.com/watch?v=PGSGsrlY3hA"
         },
         {
           "titulo": "Pare de chutar e aprenda a display: inline #01",
@@ -44,20 +44,20 @@
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Shaolin",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
+        "text": "Shaolin fights and highlights",
         "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
         {
           "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "url": "https://www.youtube.com/watch?v=5Ptr1eQqiOw"
         },
         {
           "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "url": "https://www.youtube.com/watch?v=Y2qzFK4_uBA"
         },
         {
           "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
@@ -74,20 +74,20 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Saechai",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
+        "text": "Saechai fights and highlights",
         "url": "https://www.alura.com.br/formacao-data-science"
       },
       "videos": [
         {
           "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "url": "https://www.youtube.com/watch?v=UjqmBHPKg1Q&t=33s"
         },
         {
           "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "url": "https://www.youtube.com/watch?v=n0LHkcIjFx0"
         },
         {
           "titulo": "Melhor forma de aprender Python",
