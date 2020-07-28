@@ -14,7 +14,7 @@ function Menu() {
       {/*<ButtonLink href="/" className="ButtonLink">*/}
       {/*  Novo vídeo*/}
       {/*</ButtonLink>*/}
-      <Button as="a" className="ButtonLink" href="/">
+      <Button as="a" className="ButtonLink" href="/cadastro/video">
         Novo vídeo
       </Button>
     </nav>
