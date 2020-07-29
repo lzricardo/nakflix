@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 
 import {
   BrowserRouter as Router,
@@ -9,11 +8,9 @@ import {
   Route
 } from "react-router-dom";
 
-function CadastroVideo() {
-  return (
-    <h1>CADASTRO VÍDEO</h1>
-  );
-}
+import Home from './pages/Home';
+import CadastroVideo from "./pages/cadastro/Video";
+import CadastroCategoria from "./pages/cadastro/Categoria";
 
 function Error404() {
   return (
@@ -25,9 +22,10 @@ ReactDOM.render(
   <Router>
     <React.StrictMode>
       <Switch>
-        <Route path="/cadastro/video" component={CadastroVideo} exact />
-        <Route path="/" component={App} exact />
-        <Route component={Error404} />
+        <Route path="/cadastro/video" component={CadastroVideo} exact/>
+        <Route path="/cadastro/categoria" component={CadastroCategoria} exact/>
+        <Route path="/" component={Home} exact/>
+        <Route component={Error404}/>
       </Switch>
     </React.StrictMode>
   </Router>,
