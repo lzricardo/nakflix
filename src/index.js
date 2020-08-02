@@ -5,12 +5,12 @@ import './index.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
-} from "react-router-dom";
+  Route,
+} from 'react-router-dom';
 
 import Home from './pages/Home';
-import CadastroVideo from "./pages/cadastro/Video";
-import CadastroCategoria from "./pages/cadastro/Categoria";
+import CadastroVideo from './pages/cadastro/Video';
+import CadastroCategoria from './pages/cadastro/Categoria';
 
 function Error404() {
   return (
@@ -22,12 +22,12 @@ ReactDOM.render(
   <Router>
     <React.StrictMode>
       <Switch>
-        <Route path="/cadastro/video" component={CadastroVideo} exact/>
-        <Route path="/cadastro/categoria" component={CadastroCategoria} exact/>
-        <Route path="/" component={Home} exact/>
-        <Route component={Error404}/>
+        <Route path="/cadastro/video" component={CadastroVideo} exact />
+        <Route path="/cadastro/categoria" component={CadastroCategoria} exact />
+        <Route path="/" component={Home} exact />
+        <Route component={Error404} />
       </Switch>
     </React.StrictMode>
   </Router>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

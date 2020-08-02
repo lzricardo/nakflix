@@ -1,21 +1,22 @@
-import React, {useState} from "react";
-import PageDefault from "../../../components/PageDefault";
-import {Link} from "react-router-dom";
-import FormField from "../../../components/FormField";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([
     {
       nome: 'Teste',
       descricao: 'Teste',
-      cor: '#FFFFFF'
-    }
+      cor: '#FFFFFF',
+    },
   ]);
 
   const valoresInicias = {
     nome: '',
     descricao: '',
-    cor: '#FFFFFF'
+    cor: '#FFFFFF',
   };
 
   const [values, setValues] = useState(valoresInicias);
@@ -23,39 +24,44 @@ function CadastroCategoria() {
   const setValue = (chave, valor) => {
     setValues({
       ...values,
-      [chave]: valor
+      [chave]: valor,
     });
-  }
+  };
 
   const handleChange = (e) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
 
     setValue(name, value);
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     setCategorias([
       ...categorias,
-      values
+      values,
     ]);
 
     setValues(valoresInicias);
-  }
+  };
+
+  useEffect(() => {
+    // carregar os dados iniciais
+    console.log('carreguei');
+  }, []);
 
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria: <b style={{color: values.cor}}>{values.nome}</b></h1>
+      <h1>
+        Cadastro de Categoria:&nbsp;
+        <b style={{ color: values.cor }}>{values.nome}</b>
+      </h1>
 
       <form onSubmit={handleSubmit}>
-        {/*State é necessário quando você tem muita coisa na sua aplicação e vai ser demandado um controle. o State guarda o valor,*/}
-        {/*O State vai ter dados, tem uma variável de controle um true e false do menu, você vai ter um valores bases que inicializam junto com a aplicação*/}
         <FormField
           label="Nome da Categoria"
           name="nome"
           value={values.nome}
-          type="text"
           onChange={handleChange}
         />
 
@@ -75,9 +81,9 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <button>
+        <Button>
           Cadastrar
-        </button>
+        </Button>
       </form>
 
       <ul>
